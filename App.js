@@ -1,13 +1,13 @@
 
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
-import Splashscreen from './screens/Splashscreen';
-
+import SplashScreen from './screens/Splashscreen';
+import SignupScreen from './screens/Signupscreen';
 
 export default function App() {
   return (
     <>
-    <Splashscreen />
+    <SignupScreen />
     </>
   );
 }
