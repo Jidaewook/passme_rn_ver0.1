@@ -5,7 +5,7 @@ import * as Animatable from 'react-native-animatable';
 import {LinearGradient} from 'expo-linear-gradient';
 import MaterialIcons from '@expo/vector-icons/MaterialIcons';
 
-const Splashscreen = ({navigation}) => {
+const SplashScreen = ({navigation}) => {
     return (
         <View style={styles.container}>
             <View style={styles.header}>
@@ -46,7 +46,7 @@ const Splashscreen = ({navigation}) => {
     );
 };
 
-export default Splashscreen;
+export default SplashScreen;
 
 const {height} = Dimensions.get("screen");
 const height_logo = height * 0.28;

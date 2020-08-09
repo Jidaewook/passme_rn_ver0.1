@@ -7,7 +7,9 @@ import FontAwesome from '@expo/vector-icons/FontAwesome5';
 import Feather from '@expo/vector-icons/Feather';
 import {LinearGradient} from 'expo-linear-gradient';
 
-const Signuinscreen = () => {
+import {SocialIcon} from 'react-native-elements';
+
+const SigninScreen = () => {
     const [data, setData] = useState({
         email: '',
         password: '',
@@ -133,13 +135,31 @@ const Signuinscreen = () => {
                     </TouchableOpacity>
                 </View>
 
+
+                <View style={styles.socialIcons}>
+                    <SocialIcon 
+                        type="facebook"
+                        onPress={() => {
+                            alert('Facebook')
+                        }}
+                    />
+                    <SocialIcon 
+                        type="google"
+                        onPress={() => {
+                            alert('Google')
+                        }}
+                    />
+
+                    
+                </View>
+
             </Animatable.View>
  
         </View>
     );
 };
 
-export default Signuinscreen;
+export default SigninScreen;
 
 const styles = StyleSheet.create({
     container: {
@@ -196,5 +216,12 @@ const styles = StyleSheet.create({
     textSign: {
         fontSize: 18,
         fontWeight: 'bold'
+    },
+    socialIcons: {
+        flexDirection: 'row',
+        justifyContent: "center",
+        alignItems: 'center',
+        marginTop: 20
+
     }
   });
