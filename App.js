@@ -1,15 +1,19 @@
 
 import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
-import SplashScreen from './screens/SplashScreen';
-import SignupScreen from './screens/SignupScreen';
-import SigninScreen from './screens/SigninScreen';
+
+import {NavigationContainer} from '@react-navigation/native';
+
+
+import RootStackScreen from './screens/RootStackScreen';
+
+
+
 
 export default function App() {
   return (
-    <>
-    <SigninScreen />
-    </>
+    <NavigationContainer>
+      <RootStackScreen />
+    </NavigationContainer>
   );
 }
 

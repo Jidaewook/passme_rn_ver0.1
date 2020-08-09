@@ -9,7 +9,7 @@ import {LinearGradient} from 'expo-linear-gradient';
 
 import {SocialIcon} from 'react-native-elements';
 
-const SigninScreen = () => {
+const SigninScreen = ({navigation}) => {
     const [data, setData] = useState({
         email: '',
         password: '',
@@ -119,7 +119,7 @@ const SigninScreen = () => {
                     </LinearGradient>
 
                     <TouchableOpacity
-                        onPress={() => navigation.goBack()}
+                        onPress={() => navigation.navigate('SignupScreen')}
                         style={[styles.signIn, {
                             borderColor: '#08d4c4', 
                             borderWidth: 1,
@@ -133,6 +133,8 @@ const SigninScreen = () => {
                         >Signup</Text>
                         
                     </TouchableOpacity>
+
+                    
                 </View>
 
 
