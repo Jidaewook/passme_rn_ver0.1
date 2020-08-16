@@ -60,17 +60,7 @@ const DrawerContents = (props) => {
                                 label="Notice"
                                 onPress={() => {props.navigation.navigate('NoticeScreen')}}
                             />
-                            <DrawerItem 
-                                icon={({color, size}) => (
-                                    <Icon 
-                                        name="briefcase-account-outline"
-                                        color={color}
-                                        size={size}
-                                    />
-                                )}
-                                label="News"
-                                onPress={() => {props.navigation.navigate('NewsScreen')}}
-                            />
+                        
                             <DrawerItem 
                                 icon={({color, size}) => (
                                     <Icon 
@@ -82,17 +72,7 @@ const DrawerContents = (props) => {
                                 label="NCS Lecture"
                                 onPress={() => {props.navigation.navigate('LectureScreen')}}
                             />
-                            <DrawerItem 
-                                icon={({color, size}) => (
-                                    <Icon 
-                                        name="pencil-outline"
-                                        color={color}
-                                        size={size}
-                                    />
-                                )}
-                                label="Workbook"
-                                onPress={() => {props.navigation.navigate('WorkbookScreen')}}
-                            />
+                            
                             <DrawerItem 
                                 icon={({color, size}) => (
                                     <Icon 
@@ -101,42 +81,10 @@ const DrawerContents = (props) => {
                                         size={size}
                                     />
                                 )}
-                                label="bbs"
+                                label="BBS"
                                 onPress={() => {props.navigation.navigate('bbsScreen')}}
                             />
-                            <DrawerItem 
-                                icon={({color, size}) => (
-                                    <Icon 
-                                        name="pencil-outline"
-                                        color={color}
-                                        size={size}
-                                    />
-                                )}
-                                label="Workbook"
-                                onPress={() => {props.navigation.navigate('WorkbookScreen')}}
-                            />
-                            <DrawerItem 
-                                icon={({color, size}) => (
-                                    <Icon 
-                                        name="calendar-outline"
-                                        color={color}
-                                        size={size}
-                                    />
-                                )}
-                                label="Check"
-                                onPress={() => {props.navigation.navigate('ScheduleScreen')}}
-                            />
-                            <DrawerItem 
-                                icon={({color, size}) => (
-                                    <Icon
-                                        name="youtube-tv"
-                                        color={color}
-                                        size={size}
-                                    />
-                                )}
-                                label="YOUtube"
-                                onPress={() => {props.navigation.navigate('YoutubeScreen')}}
-                            />
+                            
                         </Drawer.Section>
                         <Drawer.Section title="Preference">
                             <TouchableRipple onPress={() => {toggleTheme()}}>
