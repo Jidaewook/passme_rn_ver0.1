@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import {Text, View, Dimensions, StyleSheet, TouchableOpacity, StatusBar} from 'react-native';
+import {Text, View, Dimensions, StyleSheet, TextInput, TouchableOpacity, StatusBar} from 'react-native';
 
 import * as Animatable from 'react-native-animatable';
 
@@ -25,8 +25,10 @@ const ForgotpasswordScreen = () => {
             >
                 <Text style={styles.text_header}>Forgot Password</Text>
 
+            </View>
+
             <Animatable.View
-                animation="fadeInUpBIg"
+                animation="fadeInUpBig"
                 style={styles.footer}
             >
             <Text style={styles.text_footer}>
@@ -58,7 +60,6 @@ const ForgotpasswordScreen = () => {
                 </View>
 
             </Animatable.View>
-            </View>
 
             <View style={styles.button}>
                     <LinearGradient
